@@ -1,0 +1,22 @@
+==========
+Args:Namespace(arch='agw', batch_size=128, data_dir='/data/wml/dataset/RegDB/', dataset='regdb_rgb', dropout=0, epochs=50, eps=0.3, eval_step=1, features=0, height=288, iters=100, k1=30, k2=6, logs_dir='logs/regdb_s2/2', lr=0.00035, memorybank='CMhybrid', momentum=0.1, no_cam=False, num_instances=16, pooling_type='gem', print_freq=10, save_log_name='train_', seed=1, smooth=0, step_size=20, temp=0.05, trial=2, use_global_clustering=True, use_hard=False, weight_decay=0.0005, width=144, workers=8)
+==========
+==> Load unlabeled dataset
+=> regdb_ir loaded 2
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |   206 |     2060 |         1
+  query    |   206 |      824 |         1
+  gallery  |   206 |     2060 |         1
+  ----------------------------------------
+=> regdb_rgb loaded 2
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |   206 |     2060 |         1
+  query    |   206 |      824 |         1
+  gallery  |   206 |     2060 |         1
+  ----------------------------------------

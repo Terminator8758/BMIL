@@ -1,0 +1,53 @@
+==========
+Args:Namespace(arch='agw', batch_size=128, data_dir='/data/wml/dataset/RegDB/', dataset='regdb_rgb', dropout=0, epochs=50, eps=0.3, eval_step=1, features=0, height=288, iters=100, k1=30, k2=6, logs_dir='/data/wml/BMIL-main/logs/regdb_s1/1', lr=0.00035, memorybank='CMhybrid', momentum=0.1, no_cam=False, num_instances=16, pooling_type='gem', print_freq=10, save_log_name='train_', seed=1, smooth=0, step_size=20, temp=0.05, trial=1, use_global_clustering=True, use_hard=False, weight_decay=0.0005, width=144, workers=8)
+==========
+==> Load unlabeled dataset
+=> regdb_ir loaded 1
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |   206 |     2060 |         1
+  query    |   206 |      824 |         1
+  gallery  |   206 |     2060 |         1
+  ----------------------------------------
+=> regdb_rgb loaded 1
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |   206 |     2060 |         1
+  query    |   206 |      824 |         1
+  gallery  |   206 |     2060 |         1
+  ----------------------------------------
+IR Clustering criterion: eps: 0.300
+RGB Clustering criterion: eps: 0.300
+==> Create pseudo labels for unlabeled RGB data
+==> Create pseudo labels for unlabeled IR data
+Computing jaccard distance...
+Jaccard distance computing time cost: 55.64866828918457
+Computing jaccard distance...
+Jaccard distance computing time cost: 57.03626084327698
+==> Statistics for IR epoch 0: 197 clusters
+==> Statistics for RGB epoch 0: 196 clusters
+Epoch: [0][10/100]	Time 0.567 (1.204)	Data 0.000 (0.130)	Loss 11.718 (11.330)	Loss ir 6.276	Loss rgb 5.442	
+Epoch: [0][20/100]	Time 0.615 (0.899)	Data 0.000 (0.065)	Loss 11.398 (11.419)	Loss ir 5.301	Loss rgb 6.098	
+Epoch: [0][30/100]	Time 0.632 (0.881)	Data 0.001 (0.107)	Loss 9.203 (11.147)	Loss ir 4.959	Loss rgb 4.244	
+Epoch: [0][40/100]	Time 0.622 (0.817)	Data 0.000 (0.080)	Loss 10.096 (10.974)	Loss ir 5.861	Loss rgb 4.235	
+Epoch: [0][50/100]	Time 3.522 (0.879)	Data 2.766 (0.169)	Loss 9.578 (10.785)	Loss ir 4.759	Loss rgb 4.819	
+Epoch: [0][60/100]	Time 0.642 (0.839)	Data 0.000 (0.141)	Loss 9.668 (10.648)	Loss ir 4.132	Loss rgb 5.536	
+Epoch: [0][70/100]	Time 0.632 (0.805)	Data 0.000 (0.121)	Loss 10.477 (10.533)	Loss ir 5.219	Loss rgb 5.258	
+Epoch: [0][80/100]	Time 0.541 (0.812)	Data 0.001 (0.129)	Loss 9.666 (10.378)	Loss ir 4.419	Loss rgb 5.247	
+Epoch: [0][90/100]	Time 0.563 (0.786)	Data 0.000 (0.115)	Loss 9.476 (10.266)	Loss ir 4.382	Loss rgb 5.094	
+Epoch: [0][100/100]	Time 0.806 (0.821)	Data 0.001 (0.147)	Loss 8.103 (10.163)	Loss ir 3.395	Loss rgb 4.708	
+Extracting Query Feature...
+Extracting Time:	 110.211
+Extracting Gallery Feature...
+Extracting Time:	 127.126
+Test Trial: 1
+FC:   Rank-1: 13.20% | Rank-5: 21.31% | Rank-10: 26.31%| Rank-20: 31.31%| mAP: 12.76%| mINP: 7.24%
+
+ * Finished epoch   0   model R1: 13.2%  model mAP: 12.8%   best R1: 13.2%   best mAP: 12.8%(best_epoch:0)
+
+==> Create pseudo labels for unlabeled RGB data
+==> Create pseudo labels for unlabeled IR data
